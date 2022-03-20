@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> HYPED | ENCURTADOR</title>
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/a926b2_cfc2b507c19546d88a6a2231b832b022%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/a926b2_cfc2b507c19546d88a6a2231b832b022%7Emv2.png" type="image/png">
+  </head>
+  <body>
+    <style>
+      textarea {
+        background-color: #2f3136;
+        border: 1px solid #000;
+        color: #99aab5;
+        padding: 8px;
+        font-family: courier new;
+        position: center;
+      }
+    
+      body {
+        background-color: #36393f;
+        text-align: center
+      }
+    
+      input {
+        background-color: #2f3136;
+        color: #ffffff;
+      }
+    
+      button {
+        background-color:#5865f2;
+        border: none;
+        cursor:pointer;
+        color:#d0d8fa;
+        font-family:Arial;
+        font-size:17px;
+        padding:7px 8px;
+        text-decoration:none;
+      }
+      button:active {
+        position:relative;
+        top:1px;
+      }
+      h1 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "DroidSans", "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 25vh
+      }
+    </style>
+    <h1> Encurtador HYPED </h1>
+    <h1>Crie seu URL:</h1>
+    <button id="github" class="button"> Clique Aqui! </button>
+    <script>
+      document.getElementById('github').addEventListener("click", redirect)
+      function redirect() {
+       window.location.replace("https://e.hypeds.com/createurl");
+      }
+    </script>
+  </body>
+</html>

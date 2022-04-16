@@ -17,7 +17,7 @@ router.get('/', function(req, res) {
 });
 
 app.use('/r/', urlRouter)
-app.use('/createurl', createRouter)
+app.use('/createurl', createRouter(db))
 app.use('/', router)
 
 

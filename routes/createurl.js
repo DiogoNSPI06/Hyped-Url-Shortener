@@ -1,10 +1,10 @@
 const express = require('express');
-const db = require('quick.db')
 var router = express.Router();
 
 //req.params.id
 
-router.get('/:url', function(req, res) {
+module.exports = (db) => {
+  router.post('/', function(req, res) {
 
   let random = '';
   let dict = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZ'
@@ -15,11 +15,11 @@ router.get('/:url', function(req, res) {
   let randomURLID = `U${random}`;
   
   res.send(`Sucesso! URL criada: https://e.hypeds.com/r/${randomURLID}`)
-  db.set(`url_${randomURLID}`, req.params.url)
-});
+  db.set(`url_${randomURLID}`, req.body.url)
+  });
 
-router.get('/', function(req, res) {
-  res.send("Escreva a sua URL para ser encurtada! Exemplo: https://e.hypeds.com/createurl/www.hypeds.com ")
-})
-
-module.exports = router;
+  router.get('/', function(req, res) {
+    res.sendFile("/home/runner/Hyped-Url-Shortener/createurl.html");
+  })
+  return router;
+}

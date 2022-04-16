@@ -7,8 +7,8 @@ router.get('/:id', function(req, res) {
   console.log(req.params.id)
   
   //if(!url) url = "https://e.hypeds.com/"
-  urls = "https://" + url
-  res.redirect(urls)
+  let urls = "https://" + url
+  res.redirect(url)
 });
 
 router.get('/', function(req, res) {

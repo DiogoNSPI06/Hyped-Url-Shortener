@@ -1,0 +1,11 @@
+{
+  "token": "NzalRObYqEP68RFnHl621",
+  "API": {
+    "path": "https://api.hypeds.com",
+    "version": "v5",
+    "token": "NzalRObYqEP68RFnHl621"
+  },
+  "moduleIsEnabled": {
+    "hyped_WebAPI": true
+  }
+}
